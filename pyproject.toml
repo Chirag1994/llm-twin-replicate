@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "llm-twin-replicate"
+version = "0.1.0"
+description = "LLM Twin Replicate Project from LLM Engineer's Handbook"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^1.0.0"
+langchain = "^0.1.0"
+streamlit = "^1.28.0"
+pandas = "^2.0.0"
+numpy = "^1.24.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.9"
+pre-commit = "^3.7.1"
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."poe_the_poet"]
+poe = "poethepoet:main"
